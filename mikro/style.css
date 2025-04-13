@@ -1,0 +1,118 @@
+* {
+    margin: 0;
+}
+
+#micrometer {
+    width: 100%;
+    height: auto;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+}
+
+#controls {
+    position: relative;
+    top: -185px;
+    display: flex; 
+    gap: 20px; /* Zvýšení mezery mezi tlačítky */
+    font-family: Arial;
+}
+
+#display {
+    margin-left: 20px; /* Zvýšení mezery od tlačítka */
+    font-family: Arial;
+    background-color: rgb(211, 211, 211);
+    border: 2px solid gray;
+    border-radius: 5px;
+    padding: 20px; /* Zvýšení paddingu */
+    font-size: 24px; /* Zvýšení velikosti textu */
+    text-align: center; 
+}
+
+#unit {
+    font-size: 24px; /* Zvýšení velikosti písma */
+    font-family: Arial;
+}
+
+#decreaseBtn, #increaseBtn {
+    background-color: #008CBA; 
+    padding: 25px 40px; /* Zvýšení velikosti tlačítek */
+    border: none; 
+    font-size: 24px; /* Zvýšení velikosti písma */
+    font-weight: bold;
+    cursor: pointer; 
+    transition-duration: 0.4s;
+    color: white;
+    border-radius: 10px; /* Zvýšení zaoblení okrajů */
+}
+
+#decreaseBtn:hover {
+    background-color: #01749b; 
+}
+
+#increaseBtn {
+    background-color: #4CAF50;
+}
+
+#increaseBtn:hover {
+    background-color: #3e8e41; 
+}
+
+#checkButton {
+    background-color: #f44336; 
+    padding: 25px 40px; /* Zvýšení velikosti tlačítka */
+    border: none; 
+    font-size: 24px; /* Zvýšení velikosti písma */
+    font-weight: bold;
+    cursor: pointer; 
+    transition-duration: 0.4s;
+    color: white;
+    border-radius: 10px; /* Zvýšení zaoblení okrajů */
+}
+
+#checkButton:hover {
+    background-color: #d32f2f; 
+}
+
+#question {
+    font-size: 24px; /* Zvýšení velikosti textu */
+    font-family: Arial;
+    margin-top: 22.5px; /* Zvýšení mezery mezi tlačítky a otázkou */
+    text-align: center; 
+}
+
+button {
+    touch-action: manipulation;
+}
+
+/* Media Queries pro mobilní zařízení */
+@media (max-width: 800px) {
+    #controls {
+        flex-direction: row; /* Tlačítka se zobrazí pod sebou */
+        gap: 10px; /* Zmenšení mezery mezi tlačítky */
+    }
+
+    #display {
+        margin-left: 0; /* Zrušení levého okraje */
+        padding: 15px; /* Zmenšení paddingu */
+        font-size: 16px; /* Zmenšení velikosti textu */
+    }
+
+    #unit {
+        font-size: 16px; /* Zmenšení velikosti písma */
+    }
+
+    #decreaseBtn, #increaseBtn, #checkButton {
+        padding: 15px 25px; /* Zmenšení velikosti tlačítek */
+        font-size: 18px; /* Zmenšení velikosti písma */
+        border-radius: 8px; /* Mírné zmenšení zaoblení */
+    }
+
+    #question {
+        font-size: 18px; /* Zmenšení velikosti textu pro otázku */
+        margin-top: 15px; /* Zmenšení mezery */
+    }
+}

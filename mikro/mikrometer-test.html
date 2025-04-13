@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Micrometer Testing</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+<div class="wrapper">
+    <canvas id="micrometer"></canvas>
+    <div id="controls">
+        <button id="decreaseBtn">-</button>
+        <button id="increaseBtn">+</button>
+        <label for="unit"></label>
+        <select id="unit">
+            <option value="mm" selected>0,5 mm</option>
+            <option value="mmm">0,01 mm</option>
+        </select>
+        <p id="question"></p>
+        <button id="checkButton">Zkontolovat</button>
+    </div>
+</div>
+<script type="module" src="micrometer.js" defer></script>
+<script type="module" src="testingModule.js"></script>
+</body>
+</html>

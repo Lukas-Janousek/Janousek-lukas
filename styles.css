@@ -1,0 +1,79 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: rgb(221, 220, 220);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+nav {
+    width: 220px;
+    background: #222;
+    padding: 20px;
+    position: fixed;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    left: 0;
+    top: 0;
+}
+
+nav a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 12px;
+    background: #444;
+    text-align: left;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    background: #575757;
+}
+
+h1,h3,li,h4, p {
+    margin-left: 250px;
+    max-width: auto;
+}
+
+.simulator-img {
+    margin-left: 250px;
+    width: 45%;
+    border: 1px solid #000;
+    display: block;
+    margin-top: 20px;
+    
+    margin-bottom: 20px;
+
+}
+
+.button {
+    border-radius: 8px;
+    border: none;
+    background-color:#646464 ;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-left: 250px;
+    margin-top: 15px;
+    transition: 0.4s;
+    cursor: pointer;
+}
+.button:hover {
+    background-color: #868686;
+}
+
+footer {
+    margin-top: auto; /* Footer se posune dolů, pokud je málo obsahu */
+    text-align: center;
+    padding: 10px;
+  
+}
+
+
