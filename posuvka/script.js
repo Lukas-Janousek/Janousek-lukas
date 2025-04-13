@@ -235,11 +235,11 @@ unitSelectorElm.addEventListener("change", (event) => {
 
 
 export function checkSliderPosition(expectedValue) {
-    // Spočítáme reálnou hodnotu v mm nezávisle na vybraném kroku
+    // Spočítaná reálná hodnota v mm nezávisle na vybraném kroku
     let currentValue = parts[1].x + Math.abs(defaultClosedX);
-    const valueInMm = currentValue / unitMap["mm"]; // 👈 vždy použij mm jako základ
+    const valueInMm = currentValue / unitMap["mm"]; // vždy se použije mm jako základ
 
-    // Tolerance pro srovnání (0.05 mm je běžná lidská chyba při nastavování)
+    // Tolerance pro srovnání (0.05 mm je při nastavování)
     const tolerance = 0.09;
     return Math.abs(valueInMm - expectedValue) <= tolerance;
 }

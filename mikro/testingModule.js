@@ -38,7 +38,7 @@ document.getElementById("checkButton").addEventListener("click", () => {
     // Move to the next question
     currentQuestion = (currentQuestion + 1) % questions.length;
     displayQuestion();
-});
+});s
 
 // Start testing when the page is ready
 startTesting();
