@@ -355,7 +355,7 @@ export function checkMicrometerPosition(expectedValue) {
     currentValue = (currentValue * 182.481).toFixed(2);
 
     // Check if the current value is close to the expected value
-    const tolerance = 0.02; // Allowable tolerance for validation
+    const tolerance = 0.015; // Allowable tolerance for validation
     return Math.abs(currentValue - expectedValue) <= tolerance;
 }
 
