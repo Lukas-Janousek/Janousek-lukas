@@ -239,8 +239,8 @@ export function checkSliderPosition(expectedValue) {
     let currentValue = parts[1].x + Math.abs(defaultClosedX);
     const valueInMm = currentValue / unitMap["mm"]; // vždy se použije mm jako základ
 
-    // Tolerance pro srovnání (0.05 mm je při nastavování)
-    const tolerance = 0.09;
+    // Tolerance pro srovnání (0.05 ???mm je při nastavování)
+    const tolerance = 0.1;
     return Math.abs(valueInMm - expectedValue) <= tolerance;
 }
 
