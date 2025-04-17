@@ -87,13 +87,11 @@ function resizeCanvas(canvas, parts) {
 
 function updateDisplay(elm, value) {
 
-    if (!elm) return; //  Přidáno: když elm neexistuje, nic se neděje
+    if (!elm) return; 
     // Hodnota v pixelech + korekce posunu od nuly
     value += Math.abs(defaultClosedX);
-
     // Vypočteme hodnotu v milimetrech pomocí základní hodnoty 1mm
     const valueInMm = value / unitMap["mm"];
-
     // Zaokrouhlíme na 2 desetinná místa a zobrazíme v mm
     elm.textContent = `${valueInMm.toFixed(2)} mm`;
 }
@@ -239,7 +237,7 @@ export function checkSliderPosition(expectedValue) {
     let currentValue = parts[1].x + Math.abs(defaultClosedX);
     const valueInMm = currentValue / unitMap["mm"]; // vždy se použije mm jako základ
 
-    // Tolerance pro srovnání (0.05 ???mm je při nastavování)
+    // Tolerance pro srovnání (0.1 mm je při nastavování)
     const tolerance = 0.1;
     return Math.abs(valueInMm - expectedValue) <= tolerance;
 }

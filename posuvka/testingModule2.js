@@ -10,7 +10,7 @@ const questions = Array.from({ length: 5 }, () => {
     const roundedValue = Math.round(value * 100) / 100; // Jistota dvou desetinných míst
     return {
         expectedValue: roundedValue,
-        questionText: `Nastav šupleru na ${roundedValue.toFixed(2)} mm`
+        questionText: `Nastav posuvné měřidlo na ${roundedValue.toFixed(2)} mm`
     };
 });
 
