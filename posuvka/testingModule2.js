@@ -1,7 +1,7 @@
 // testingModule.js
 import { checkSliderPosition } from './script.js';
 
-
+/*
 let currentQuestion = 0;
 const questions = Array.from({ length: 5 }, () => {
     const steps = Math.floor((150 - 0.05) / 0.05); // Počet možných kroků
@@ -13,19 +13,19 @@ const questions = Array.from({ length: 5 }, () => {
         questionText: `Nastav posuvné měřidlo na ${roundedValue.toFixed(2)} mm`
     };
 });
+*/
 
 
-/*   jenom desetiny!!!!!!!!!!!!!!!
 let currentQuestion = 0;
 const questions = Array.from({ length: 5 }, () => {
     const randomValue = Math.random() * 149.99 + 0.01; // Rozmezí od 0.01 do 150.00
     const roundedValue = Math.round(randomValue * 10) / 10; // Zaokrouhlení na 2 desetinná místa
     return {
         expectedValue: roundedValue,
-        questionText: `Nastav šupléru na ${roundedValue.toFixed(2)} mm`
+        questionText: `Nastav měřidlo na ${roundedValue.toFixed(2)} mm`
     };
 });
-*/
+
 // Initialize the testing process
 function startTesting() {
     displayQuestion();

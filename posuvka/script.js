@@ -93,7 +93,7 @@ function updateDisplay(elm, value) {
     // Vypočteme hodnotu v milimetrech pomocí základní hodnoty 1mm
     const valueInMm = value / unitMap["mm"];
     // Zaokrouhlíme na 2 desetinná místa a zobrazíme v mm
-    elm.textContent = `${valueInMm.toFixed(2)} mm`;
+    elm.textContent = `${valueInMm.toFixed(1)} mm`;
 }
 
 let isDragging = false;
@@ -238,7 +238,7 @@ export function checkSliderPosition(expectedValue) {
     const valueInMm = currentValue / unitMap["mm"]; // vždy se použije mm jako základ
 
     // Tolerance pro srovnání (0.1 mm je při nastavování)
-    const tolerance = 0.1;
+    const tolerance = 0.8;
     return Math.abs(valueInMm - expectedValue) <= tolerance;
 }
 
