@@ -90,6 +90,17 @@ button {
 }
 
 
+select {
+  font-size: 16px;
+  padding: 5px 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: rgb(211, 211, 211);
+  border: 2px solid gray;
+  color: black;
+ 
+}
+
 /* Media Queries pro mobilní zařízení */
 @media (max-width: 800px) {
     #controls {
